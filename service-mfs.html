@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="КЛКТ челюстно-лицевой области (ЧЛО) в Казани. Комплексная 3D диагностика черепа для хирургии и травматологии. Орбиталь 3D.">
+    <title>Диагностика ЧЛО | Орбиталь 3D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .service-hero {
+            padding: calc(var(--header-height) + var(--spacing-16)) 0 var(--spacing-12);
+            position: relative;
+        }
+
+        .service-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--spacing-12);
+            margin-bottom: var(--spacing-16);
+        }
+
+        .content-block h2 {
+            font-size: 1.75rem;
+            margin-bottom: var(--spacing-6);
+            color: white;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: var(--spacing-4);
+            margin-top: var(--spacing-12);
+        }
+
+        .content-block h2:first-child {
+            margin-top: 0;
+        }
+
+        .content-block p {
+            color: var(--color-text-muted);
+            margin-bottom: var(--spacing-4);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .content-block ul {
+            list-style: none;
+            margin-bottom: var(--spacing-6);
+        }
+
+        .content-block li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            color: var(--color-text-main);
+        }
+
+        .content-block li::before {
+            content: "•";
+            color: var(--color-primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Sidebar / Sticky info */
+        .service-sidebar {
+            position: sticky;
+            top: calc(var(--header-height) + 20px);
+            height: fit-content;
+        }
+
+        .info-card {
+            background-color: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-6);
+            margin-bottom: var(--spacing-6);
+            backdrop-filter: blur(10px);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 109, 90, 0.1);
+            color: var(--color-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .info-text strong {
+            display: block;
+            color: white;
+        }
+
+        .info-text span {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        .highlight-box {
+            background: rgba(39, 201, 63, 0.1);
+            border: 1px solid rgba(39, 201, 63, 0.3);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-4);
+            margin-top: var(--spacing-8);
+        }
+
+        .highlight-box h4 {
+            color: #27c93f;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media (max-width: 900px) {
+            .service-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <img src="orbital_logo_4000.png" alt="Orbital3D Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#services">Услуги</a>
+                <a href="index.html#contacts">Центры</a>
+                <a href="cost.html">Стоимость</a>
+                <a href="index.html#refer">Направление</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+78435282028" class="btn btn-secondary" style="font-weight: 600;">+7 (843) 528−20−28</a>
+                <a href="#book" class="btn btn-primary js-open-modal">Записаться</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Title -->
+        <section class="service-hero">
+            <div
+                style="display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: var(--spacing-6);">
+                <h1 style="margin: 0;"><span class="text-gradient">Диагностика ЧЛО</span></h1>
+                <a href="index.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">← Назад</a>
+            </div>
+            <p
+                style="max-width: 700px; color: var(--color-text-muted); font-size: 1.2rem; margin-top: var(--spacing-4);">
+                Комплексная 3D-томография лицевого скелета для сложных клинических случаев, хирургии и травматологии.
+            </p>
+        </section>
+
+        <div class="service-layout">
+            <!-- Main Content -->
+            <div class="content-block">
+
+                <h2>Точная карта лицевого скелета</h2>
+                <p>
+                    Челюстно-лицевая область (ЧЛО) — одна из самых сложных анатомических зон человека. Здесь
+                    переплетаются кости, нервные каналы, сосуды, пазухи и мягкие ткани. КЛКТ лицевого отдела черепа —
+                    это единственный неинвазивный способ увидеть эту сложную архитектуру целиком.
+                </p>
+                <p>
+                    Исследование охватывает: глазницы, носовую полость и пазухи, обе челюсти, височно-нижнечелюстные
+                    суставы и даже верхние шейные позвонки. Вы получаете полную "дорожную карту" костных структур,
+                    необходимую для планирования масштабных операций и точной диагностики.
+                </p>
+
+                <h2>Показания к исследованию</h2>
+                <p>Данный вид диагностики назначается челюстно-лицевыми хирургами, пластическими хирургами и неврологами
+                    в следующих случаях:</p>
+                <ul>
+                    <li><strong>Травмы и переломы:</strong> точная локализация повреждений костей лица после аварий или
+                        ударов.</li>
+                    <li><strong>Пластическая хирургия:</strong> 3D-моделирование перед реконструктивными операциями
+                        (ринопластика, ментопластика и др.), чтобы хирург видел анатомию "изнутри".</li>
+                    <li><strong>Врожденные аномалии:</strong> диагностика дефектов развития лицевого скелета.</li>
+                    <li><strong>Неврология:</strong> выявления причин парезов мышц лица, невралгий и патологий костных
+                        каналов, где проходят нервы.</li>
+                    <li><strong>Онкопоиск:</strong> обнаружение новообразований костной ткани на ранних стадиях.</li>
+                    <li><strong>Воспалительные процессы:</strong> диагностика остеомиелитов и сложных инфекций кости.
+                    </li>
+                </ul>
+
+                <h2>Безопасность пациента</h2>
+                <p>
+                    Несмотря на большой объем исследуемой зоны (весь лицевой череп), лучевая нагрузка остается
+                    минимальной. Наш алгоритм сканирования оптимизирован так, чтобы получить максимум информации при
+                    минимально возможной дозе облучения. Процедура безопасна и соответствует всем современным
+                    биологическим стандартам.
+                </p>
+
+                <div class="highlight-box">
+                    <h4><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                            <line x1="9" y1="9" x2="9.01" y2="9" />
+                            <line x1="15" y1="9" x2="15.01" y2="9" />
+                        </svg> Комфорт для каждого</h4>
+                    <p style="margin-bottom: 0; color: #dfe3eb;">
+                        Боитесь замкнутых пространств? У нас установлены томографы <strong>открытого типа</strong>. Вы
+                        не помещаетесь "в трубу", а просто стоите или сидите, пока датчик бесшумно вращается вокруг
+                        головы. Никакого дискомфорта даже при клаустрофобии.
+                    </p>
+                </div>
+
+                <h2>Как проходит сканирование</h2>
+                <ol style="padding-left: 20px; color: var(--color-text-muted); margin-bottom: var(--spacing-8);">
+                    <li style="margin-bottom: 10px;">Мы попросим вас снять все металлические предметы с области головы и
+                        шеи, чтобы исключить помехи на снимке.</li>
+                    <li style="margin-bottom: 10px;">Во время процедуры вы стоите (или сидите) неподвижно. Аппарат
+                        сделает один оборот вокруг вас.</li>
+                    <li style="margin-bottom: 10px;">Все исследование занимает менее 1 минуты. Вы ничего не
+                        почувствуете.</li>
+                    <li style="margin-bottom: 10px;">Весь процесс контролирует лаборант из соседней комнаты.</li>
+                </ol>
+
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="service-sidebar">
+                <div class="info-card">
+                    <h3 style="margin-bottom: var(--spacing-4); color: white;">Ключевая информация</h3>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <strong>Время сканирования</strong>
+                            <span>30–40 секунд</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <polyline points="10 9 9 9 8 9" />
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <strong>Выдача результатов</strong>
+                            <span>15–30 минут</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <strong>Описание врача</strong>
+                            <span>1–3 рабочих дня</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3 style="margin-bottom: var(--spacing-4); color: white;">Что взять с собой?</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 10px; font-size: 0.95rem; color: var(--color-text-muted);">
+                            <span style="color: var(--color-primary); margin-right: 8px;">➜</span> Паспорт
+                        </li>
+                        <li style="margin-bottom: 10px; font-size: 0.95rem; color: var(--color-text-muted);">
+                            <span style="color: var(--color-primary); margin-right: 8px;">➜</span> Направление врача
+                        </li>
+                        <li style="margin-bottom: 10px; font-size: 0.95rem; color: var(--color-text-muted);">
+                            <span style="color: var(--color-primary); margin-right: 8px;">➜</span> Предыдущие снимки
+                            (если есть)
+                        </li>
+                    </ul>
+                    <div
+                        style="margin-top: 15px; font-size: 0.85rem; color: #666; border-top: 1px solid var(--color-border); padding-top: 10px;">
+                        *Детям до 14 лет обязательно сопровождение родителей и св-во о рождении.
+                    </div>
+                </div>
+
+                <a href="#book" class="btn btn-primary js-open-modal"
+                    style="width: 100%; justify-content: center;">Записаться онлайн</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo">Orbital3D</a>
+                <p>&copy; 2015-2026 ООО "Орбиталь"</p>
+                <div style="margin-top: 1rem; color: var(--color-text-muted); font-size: 0.75rem; line-height: 1.4;">
+                    Лицензия № ЛО-16-01-006399<br>от 16 ноября 2017г.
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Услуги</h4>
+                <a href="service-dental.html">Диагностика зубов и челюстей</a>
+                <a href="service-ent.html">Диагностика ЛОР</a>
+                <a href="service-tmj.html">Диагностика ВНЧС</a>
+                <a href="service-mfs.html">Диагностика ЧЛО</a>
+            </div>
+            <div class="footer-col">
+                <h4>Пациентам</h4>
+                <a href="cost.html">Стоимость</a>
+                <a href="index.html#refer">Подготовка</a>
+                <a href="index.html#contacts">Контакты</a>
+            </div>
+            <div class="footer-col">
+                <h4>Врачам</h4>
+                <a href="#">Личный кабинет</a>
+                <a href="index.html#refer">Направить пациента</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

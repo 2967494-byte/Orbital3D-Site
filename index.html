@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Орбиталь 3D - Лаборатория стоматологической рентгенодиагностики в Казани. КЛКТ, ОПТГ, Зонография ВНЧС.">
+    <title>Орбиталь 3D | Лаборатория рентгенодиагностики</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo">
+                <img src="orbital_logo_4000.png" alt="Orbital3D Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="#services">Услуги</a>
+                <a href="#contacts">Центры</a>
+                <a href="cost.html">Стоимость</a>
+                <a href="#refer">Направление</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+78435282028" class="btn btn-secondary" style="font-weight: 600;">+7 (843) 528−20−28</a>
+                <a href="#book" class="btn btn-primary js-open-modal">Записаться</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+
+                    <h1>Лаборатория <br> <span class="text-gradient">3D диагностики</span></h1>
+                    <p class="hero-sub">Томография зубов, пазух носа и челюстно-лицевой области. Высокоточное
+                        оборудование для идеального результата.</p>
+                    <div class="hero-actions">
+                        <a href="#book" class="btn btn-primary btn-lg js-open-modal">Записаться на прием</a>
+                        <a href="#services" class="btn btn-outline btn-lg">Наши услуги</a>
+                    </div>
+                    <div class="tech-stack-icons">
+                        <span>Работаем ежедневно</span>
+                        <div class="logos">
+                            <span>Пн-Пт: 08:00 - 20:00</span>
+                            <span>Сб-Вс: 09:00 - 15:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card-stack">
+                        <div class="card card-back"></div>
+                        <div class="card card-mid"></div>
+                        <div class="card card-front">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span style="margin-left:auto; font-size: 12px; color: #666; font-weight: 500;">DICOM
+                                    Viewer</span>
+                            </div>
+                            <div class="code-content"
+                                style="padding: 0; position: relative; min-height: 300px; background-color: #050505; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                                <!-- Medical Grid Background -->
+                                <div
+                                    style="position: absolute; inset: 0; background-image: radial-gradient(rgba(255, 109, 90, 0.1) 1px, transparent 1px); background-size: 20px 20px; opacity: 0.5;">
+                                </div>
+
+                                <div class="skull-container"
+                                    style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; perspective: 1000px; position: relative; z-index: 2;">
+                                    <img src="skull_3d.png" alt="3D Skull Scan" class="skull-image"
+                                        style="width: 85%; height: auto; transition: transform 0.1s ease-out; filter: drop-shadow(0 0 30px rgba(255, 109, 90, 0.2));">
+
+                                    <!-- Scanning overlay effect -->
+                                    <div class="scan-line"
+                                        style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: var(--color-primary); box-shadow: 0 0 20px var(--color-primary); animation: scanMove 4s infinite linear; z-index: 3;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Наши услуги</h2>
+                    <p>Полный спектр рентгенодиагностики на современном оборудовании</p>
+                </div>
+                <div class="feature-grid">
+                    <a href="service-dental.html" class="feature-card" style="text-decoration: none; display: block;">
+                        <div
+                            style="width: 100%; height: 200px; overflow: hidden; border-radius: var(--radius-md); margin-bottom: var(--spacing-6);">
+                            <img src="https://optim.tildacdn.com/tild3030-6664-4330-b631-313766323037/-/resize/720x/-/format/webp/3R2E8ZpKCIU.jpg.webp"
+                                alt="Диагностика зубов" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3>Диагностика зубов и челюстей</h3>
+                        <p>КЛКТ, панорамные снимки и прицельная рентгенография для точной диагностики.</p>
+                    </a>
+                    <a href="service-ent.html" class="feature-card" style="text-decoration: none; display: block;">
+                        <div
+                            style="width: 100%; height: 200px; overflow: hidden; border-radius: var(--radius-md); margin-bottom: var(--spacing-6);">
+                            <img src="https://optim.tildacdn.com/tild3934-3334-4332-a461-376334346464/-/resize/720x/-/format/webp/RWMdfG9AXX0.jpg.webp"
+                                alt="Диагностика ЛОР" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3>Диагностика ЛОР</h3>
+                        <p>Исследования околоносовых пазух, височных костей и носоглотки в высоком разрешении.</p>
+                    </a>
+                    <a href="service-tmj.html" class="feature-card" style="text-decoration: none; display: block;">
+                        <div
+                            style="width: 100%; height: 200px; overflow: hidden; border-radius: var(--radius-md); margin-bottom: var(--spacing-6);">
+                            <img src="https://optim.tildacdn.com/tild3134-3664-4439-b035-663436663131/-/resize/720x/-/format/webp/CRY1pezgulM.jpg.webp"
+                                alt="Диагностика ВНЧС" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3>Диагностика ВНЧС</h3>
+                        <p>Функциональная диагностика височно-нижнечелюстного сустава (открытый/закрытый рот).</p>
+                    </a>
+                    <a href="service-mfs.html" class="feature-card" style="text-decoration: none; display: block;">
+                        <div
+                            style="width: 100%; height: 200px; overflow: hidden; border-radius: var(--radius-md); margin-bottom: var(--spacing-6);">
+                            <img src="skull_3d.png" alt="Диагностика ЧЛО"
+                                style="width: 100%; height: 100%; object-fit: contain; background: radial-gradient(circle, rgba(255,109,90,0.1), transparent);">
+                        </div>
+                        <h3>Диагностика челюстно-лицевой области (ЧЛО)</h3>
+                        <p>Комплексная 3D визуализация черепа для планирования сложных операций и ортодонтии.</p>
+                    </a>
+                </div>
+        </section>
+
+        <section id="contacts" class="cta-section">
+            <div class="container">
+                <div class="cta-box"
+                    style="text-align: left; position: relative; overflow: hidden; background-color: var(--color-secondary);">
+                    <h2 style="margin-bottom: 2rem;">Наши центры в Казани</h2>
+
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; text-align: left;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-primary);">
+                                Ново-Савиновский</h4>
+                            <p style="opacity: 0.8; font-size: 0.95rem;">ул. Чистопольская, 61Б, каб. 1</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-primary);">
+                                Московский</h4>
+                            <p style="opacity: 0.8; font-size: 0.95rem;">ул. Лушникова, 10А (БЦ «Саборг»), каб. 309</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-primary);">
+                                Приволжский</h4>
+                            <p style="opacity: 0.8; font-size: 0.95rem;">ул. Сафиуллина, 5 (БЦ «Вера»), каб. 14</p>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--color-primary);">
+                                Вахитовский</h4>
+                            <p style="opacity: 0.8; font-size: 0.95rem;">ул. Ершова, 1А (ТРК «Корстон»), каб. 969</p>
+                        </div>
+                    </div>
+
+                    <div
+                        style="margin-top: 3rem; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid rgba(255,255,255,0.1); filter: invert(90%) hue-rotate(180deg) brightness(85%) contrast(110%) grayscale(30%);">
+                        <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aebc6b174c2134c36b777dc20d5beebeb6dac707f8540612dca5913157b9b36cb&amp;width=100%25&amp;height=454&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+
+                    <div
+                        style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
+                        <div>
+                            <p style="font-size: 1.25rem; font-weight: bold;">+7 (843) 528−20−28</p>
+                            <a href="tel:+79872905007" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">+7 987
+                                290 50 07</a>
+                        </div>
+                        <a href="https://wa.me/79872905007" class="btn btn-primary btn-lg">Написать в WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="#" class="logo">Orbital3D</a>
+                <p>&copy; 2015-2026 ООО "Орбиталь"</p>
+                <div style="margin-top: 1rem; color: var(--color-text-muted); font-size: 0.75rem; line-height: 1.4;">
+                    Лицензия № ЛО-16-01-006399<br>от 16 ноября 2017г.
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Услуги</h4>
+                <a href="service-dental.html">Диагностика зубов и челюстей</a>
+                <a href="service-ent.html">Диагностика ЛОР</a>
+                <a href="service-tmj.html">Диагностика ВНЧС</a>
+                <a href="service-mfs.html">Диагностика ЧЛО</a>
+            </div>
+            <div class="footer-col">
+                <h4>Пациентам</h4>
+                <a href="cost.html">Стоимость</a>
+                <a href="#refer">Подготовка</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <div class="footer-col">
+                <h4>Врачам</h4>
+                <a href="#">Личный кабинет</a>
+                <a href="#">Направить пациента</a>
+                <a href="#">Скачать направление</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

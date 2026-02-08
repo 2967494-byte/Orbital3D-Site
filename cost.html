@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Стоимость услуг Орбиталь 3D - Лаборатория стоматологической рентгенодиагностики в Казани.">
+    <title>Стоимость услуг | Орбиталь 3D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .price-section {
+            margin-bottom: var(--spacing-16);
+        }
+
+        .price-section-title {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-4);
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .price-section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--color-border), transparent);
+        }
+
+        .price-info-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+            margin-bottom: var(--spacing-6);
+            background: rgba(255, 255, 255, 0.03);
+            padding: 4px 12px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--color-border);
+        }
+
+        .price-table-container {
+            background-color: var(--color-bg-card);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--color-border);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .price-table th {
+            background-color: rgba(255, 255, 255, 0.03);
+            padding: 1rem var(--spacing-6);
+            font-weight: 700;
+            color: var(--color-primary);
+            border-bottom: 1px solid var(--color-border);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        .price-table td {
+            padding: 1.25rem var(--spacing-6);
+            border-bottom: 1px solid var(--color-border);
+            color: var(--color-text-main);
+            font-size: 0.95rem;
+        }
+
+        .price-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .price-table tr:hover td {
+            background-color: rgba(255, 109, 90, 0.02);
+        }
+
+        .price-val {
+            font-weight: 700;
+            color: var(--color-primary);
+            white-space: nowrap;
+            text-align: right;
+        }
+
+        .price-hero {
+            padding: calc(var(--header-height) + var(--spacing-16)) 0 var(--spacing-8);
+            text-align: center;
+        }
+
+        .nav-grid {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-4);
+            margin-bottom: var(--spacing-12);
+            flex-wrap: wrap;
+        }
+
+        .nav-chip {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-full);
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-chip:hover {
+            color: white;
+            border-color: var(--color-primary);
+            background: rgba(255, 109, 90, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <img src="orbital_logo_4000.png" alt="Orbital3D Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#services">Услуги</a>
+                <a href="index.html#contacts">Центры</a>
+                <a href="cost.html">Стоимость</a>
+                <a href="index.html#refer">Направление</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+78435282028" class="btn btn-secondary" style="font-weight: 600;">+7 (843) 528−20−28</a>
+                <a href="#book" class="btn btn-primary js-open-modal">Записаться</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="price-hero">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+                <h1 style="margin: 0;"><span class="text-gradient">Стоимость услуг</span></h1>
+                <a href="index.html" class="btn btn-secondary"
+                    style="display: inline-flex; align-items: center; gap: 8px; opacity: 0.8; white-space: nowrap;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5" />
+                        <path d="M12 19l-7-7 7-7" />
+                    </svg>
+                    Назад
+                </a>
+            </div>
+        </section>
+
+        <div class="nav-grid">
+            <a href="#2d" class="nav-chip">2D исследования</a>
+            <a href="#3d-dent" class="nav-chip">3D Стоматология</a>
+            <a href="#3d-lor" class="nav-chip">3D ЛОР</a>
+            <a href="#3d-vnch" class="nav-chip">3D ВНЧС</a>
+            <a href="#ortho" class="nav-chip">Ортодонтия</a>
+            <a href="#extra" class="nav-chip">Дополнительно</a>
+        </div>
+
+        <!-- 2D Block -->
+        <section id="2d" class="price-section">
+            <h2 class="price-section-title">2D исследования</h2>
+            <div class="price-info-badge">без описания, печать на фотобумаге, отправка по e-mail</div>
+            <div class="price-table-container">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th style="text-align: right;">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">Ортопантомография (ОПТГ)</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">панорамная томография
+                                    зубных рядов</div>
+                            </td>
+                            <td class="price-val">1 200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">Телерентгенография (ТРГ)</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">в прямой / боковой /
+                                    подбородочно-теменной проекции (одна проекция)</div>
+                            </td>
+                            <td class="price-val">1 300 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">Зонография ВНЧС</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">исследование ВНЧС с
+                                    открытым и закрытым ртом</div>
+                            </td>
+                            <td class="price-val">1 200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">Рентгенограмма костей кисти</div>
+                            </td>
+                            <td class="price-val">1 300 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 3D Dentistry Block -->
+        <section id="3d-dent" class="price-section">
+            <h2 class="price-section-title">3D исследования / Стоматология</h2>
+            <div class="price-info-badge">без описания, запись на CD / Flash, отправка по e-mail</div>
+            <div class="price-table-container">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th style="text-align: right;">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ черепа</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Зона размером 15х15 /
+                                    16x16 см включает две челюсти, ОНП, ВНЧС (в зависимости от анатомических
+                                    особенностей пациента)</div>
+                            </td>
+                            <td class="price-val">3 400 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ зубных рядов</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Зона размером 12х9 см
+                                    включает две челюсти + альвеолярные бухты гайморовых пазух</div>
+                            </td>
+                            <td class="price-val">3 100 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ 1 челюсти</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Зона размером 12х6 см
+                                </div>
+                            </td>
+                            <td class="price-val">2 600 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ 1 сегмента челюсти</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Зона размером 8х5 см
+                                </div>
+                            </td>
+                            <td class="price-val">2 200 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ 2 сегментов челюсти</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Зона размером 8х9 см /
+                                    два сегмента: I и IV, либо II и III</div>
+                            </td>
+                            <td class="price-val">2 600 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ 2-3 стоящих рядом зубов</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Зона размером 5х5 см
+                                </div>
+                            </td>
+                            <td class="price-val">1 800 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 3D ENT Block -->
+        <section id="3d-lor" class="price-section">
+            <h2 class="price-section-title">3D исследования / ЛОР</h2>
+            <div class="price-info-badge">запись на CD / Flash, отправка по e-mail</div>
+            <div class="price-table-container">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th style="text-align: right;">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ черепа</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Зона размером 15х15 /
+                                    16x16 см включает верхнюю челюсть и все околоносовые пазухи (без описания)</div>
+                            </td>
+                            <td class="price-val">3 400 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ черепа</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Зона размером 15х15 /
+                                    16x16 см<br>височные кости + описание височных костей</div>
+                            </td>
+                            <td class="price-val">5 500 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 3D TMJ Block -->
+        <section id="3d-vnch" class="price-section">
+            <h2 class="price-section-title">3D исследования / ВНЧС</h2>
+            <div class="price-info-badge">без описания, запись на CD / Flash, отправка по e-mail</div>
+            <div class="price-table-container">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th style="text-align: right;">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ ВНЧС</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">2 сустава в 2-х
+                                    положениях (открытый и закрытый рот)</div>
+                            </td>
+                            <td class="price-val">4 800 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ ВНЧС</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">2 сустава в 1 положении
+                                    (закрытый рот)</div>
+                            </td>
+                            <td class="price-val">3 400 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ ВНЧС</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">1 сустав в 2-х
+                                    положениях (открытый и закрытый рот)</div>
+                            </td>
+                            <td class="price-val">4 500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">КЛКТ ВНЧС</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">1 сустав в 1 положении
+                                    (закрытый рот)</div>
+                            </td>
+                            <td class="price-val">2 500 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div
+                style="margin-top: var(--spacing-12); text-align: center; color: var(--color-text-muted); font-size: 0.9rem;">
+                * Все 3D-исследования включают программу-вьюер для просмотра на ПК.
+            </div>
+        </section>
+
+        <!-- Orthodontics Block -->
+        <section id="ortho" class="price-section">
+            <h2 class="price-section-title">Диагностика для ортодонта</h2>
+            <div class="price-info-badge">Комплексные услуги и цефалометрия</div>
+            <div class="price-table-container">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th style="text-align: right;">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">ОРТОДОНТ-1</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Комплексная услуга (ОПТГ
+                                    + ТРГ)</div>
+                            </td>
+                            <td class="price-val">2 300 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">ОРТОДОНТ-2</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Комплексная услуга (ОПТГ
+                                    + ТРГ + Анализ и расчет ТРГ)</div>
+                            </td>
+                            <td class="price-val">4 300 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">ОРТОДОНТ-3</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Комплексная услуга (КЛКТ
+                                    16х16 см + стандартная 3D Цефалометрия)</div>
+                            </td>
+                            <td class="price-val">6 600 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">ОРТОДОНТ-4</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Комплексная услуга (КЛКТ
+                                    16х16 см + расширенная 3D Цефалометрия)</div>
+                                <div style="font-size: 0.8rem; opacity: 0.5; margin-top: 2px;">включая анализ по Kim /
+                                    анализ по Slavicek</div>
+                            </td>
+                            <td class="price-val">7 500 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Extra Services Block -->
+        <section id="extra" class="price-section">
+            <h2 class="price-section-title">Дополнительные услуги</h2>
+            <div class="price-info-badge">Искусственный интеллект и аналитика</div>
+            <div class="price-table-container">
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th style="text-align: right;">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">Диагнокат</div>
+                                <div style="font-size: 0.85rem; opacity: 0.7; margin-top: 4px;">Скрининговый отчет или
+                                    конвертация данных с применением ИИ / за 1 любой отчет</div>
+                            </td>
+                            <td class="price-val">1 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="font-weight: 500;">Анализ и расчет ТРГ</div>
+                            </td>
+                            <td class="price-val">2 300 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo">Orbital3D</a>
+                <p>&copy; 2015-2026 ООО "Орбиталь"</p>
+                <div style="margin-top: 1rem; color: var(--color-text-muted); font-size: 0.75rem; line-height: 1.4;">
+                    Лицензия № ЛО-16-01-006399<br>от 16 ноября 2017г.
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Услуги</h4>
+                <a href="service-dental.html">Диагностика зубов и челюстей</a>
+                <a href="service-ent.html">Диагностика ЛОР</a>
+                <a href="service-tmj.html">Диагностика ВНЧС</a>
+                <a href="service-mfs.html">Диагностика ЧЛО</a>
+            </div>
+            <div class="footer-col">
+                <h4>Пациентам</h4>
+                <a href="cost.html">Стоимость</a>
+                <a href="index.html#refer">Подготовка</a>
+                <a href="index.html#contacts">Контакты</a>
+            </div>
+            <div class="footer-col">
+                <h4>Врачам</h4>
+                <a href="#">Личный кабинет</a>
+                <a href="index.html#refer">Направить пациента</a>
+                <a href="#">Скачать направление</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
