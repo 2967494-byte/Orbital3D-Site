@@ -22,9 +22,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Mobile Menu Toggle
     const mobileBtn = document.querySelector('.mobile-menu-btn');
-    // Basic alert for now, in production this would toggle a class
+
+    // Create mobile menu container dynamically
+    let mobileMenu = document.querySelector('.mobile-menu');
+    if (!mobileMenu) {
+        mobileMenu = document.createElement('div');
+        mobileMenu.className = 'mobile-menu';
+
+        // Clone links
+        const navLinks = document.querySelector('.nav-links').cloneNode(true);
+        navLinks.className = 'nav-links-mobile';
+        navLinks.classList.remove('nav-links'); // Ensure no conflict
+
+        // Clone actions
+        const navActions = document.querySelector('.nav-actions').cloneNode(true);
+        navActions.className = 'nav-actions-mobile';
+        navActions.classList.remove('nav-actions');
+
+        mobileMenu.appendChild(navLinks);
+        mobileMenu.appendChild(navActions);
+
+        document.body.appendChild(mobileMenu);
+    }
+
     mobileBtn.addEventListener('click', () => {
-        alert('Menu functionality placeholder');
+        mobileBtn.classList.toggle('active');
+        if (mobileMenu.style.display === 'flex') {
+            mobileMenu.classList.remove('active');
+            setTimeout(() => { mobileMenu.style.display = 'none'; }, 300); // Wait for transition
+            document.body.style.overflow = '';
+        } else {
+            mobileMenu.style.display = 'flex';
+            // Slight delay to allow display:flex to apply before adding active class for transition
+            setTimeout(() => { mobileMenu.classList.add('active'); }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+    });
+
+    // Close menu when clicking a link
+    mobileMenu.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A' || e.target.closest('a')) {
+            mobileBtn.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            setTimeout(() => { mobileMenu.style.display = 'none'; }, 300);
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Close menu on resize if screen becomes large
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 900 && mobileMenu.classList.contains('active')) {
+            mobileBtn.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            mobileMenu.style.display = 'none';
+            document.body.style.overflow = '';
+        }
     });
 
     // 3. Scroll Animations
