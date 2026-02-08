@@ -659,6 +659,70 @@ footer {
     }
 }
 
+/* Scan reveal animation - moves down then back up */
+@keyframes scanReveal {
+    0% {
+        top: 5%;
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    /* Move down - revealing skull */
+    45% {
+        top: 95%;
+        opacity: 1;
+    }
+
+    50% {
+        top: 95%;
+        opacity: 1;
+    }
+
+    /* Move back up - hiding skull */
+    95% {
+        top: 5%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 5%;
+        opacity: 0;
+    }
+}
+
+/* Skin overlay animation synced with scan line */
+.skin-overlay>img,
+.skin-overlay>div {
+    animation: skinReveal 6s infinite ease-in-out;
+}
+
+@keyframes skinReveal {
+    0% {
+        clip-path: inset(0 0 95% 0);
+    }
+
+    /* Skin grows as line goes down (covering skull) */
+    45% {
+        clip-path: inset(0 0 5% 0);
+    }
+
+    50% {
+        clip-path: inset(0 0 5% 0);
+    }
+
+    /* Skin shrinks as line goes up (revealing skull) */
+    95% {
+        clip-path: inset(0 0 95% 0);
+    }
+
+    100% {
+        clip-path: inset(0 0 95% 0);
+    }
+}
+
 /* Modal Styles */
 .modal-overlay {
     position: fixed;
